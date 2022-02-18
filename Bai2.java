@@ -12,7 +12,7 @@ public class Bai4 {
                 a = Byte.parseByte(sc.nextLine());
                 break;
             } catch (Exception ex) {
-                System.out.println("Vui long nhap byte !");
+                System.out.println("Vui long nhap so >= -127 <=128");
                 System.out.print("nhap a: ");
             }
         }
@@ -22,7 +22,7 @@ public class Bai4 {
                 b = Byte.parseByte(sc.nextLine());
                 break;
             } catch (Exception ex) {
-                System.out.println("Vui long nhap byte !");
+                System.out.println("Vui long nhap so >= -127 <=128");
                 System.out.print("nhap b: ");
             }
         }
