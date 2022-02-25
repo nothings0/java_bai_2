@@ -1,0 +1,27 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+public class checkVal {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String string1 = new String("HuyHoang");
+        String string2 = new String("2021");
+        int lengthUser = string1.length();
+        int lengthPass = string2.length();
+        String username, password;
+        username = sc.nextLine();
+        password = sc.nextLine();
+        int length_1 = username.length();
+        int length_2 = password.length();
+        if(length_1 == lengthUser && length_2 == lengthPass){
+            if(username.equals(string1) && password.equals(string2)){
+                System.out.println("nhap dung");
+            }else{
+                System.out.println("nhap sai");
+            }
+        }else{
+            System.out.println("nhap sai");
+        }
+    }
+}
