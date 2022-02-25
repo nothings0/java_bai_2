@@ -1,0 +1,30 @@
+
+package javaapplication1;
+
+import java.util.Scanner;
+
+public class Number {
+    public static void main(String[] args) {
+        double a, b;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap a: ");
+        a = Double.parseDouble(sc.nextLine());
+        System.out.println("nhap b: ");
+        b = Double.parseDouble(sc.nextLine());
+        while(a < b){
+            System.out.println("nhap a > b: ");
+            System.out.println("nhap a: ");
+            a = Double.parseDouble(sc.nextLine());
+            System.out.println("nhap b: ");
+            b = Double.parseDouble(sc.nextLine());
+        }
+        double kq = a - b;
+        System.out.println("What is " + a + " - " + b + " ?");  
+        double input = Double.parseDouble(sc.nextLine());
+        while(kq != input){
+            System.out.println("sai, hay nhap lai");
+            input = Double.parseDouble(sc.nextLine());
+        }
+        System.out.println("dung");
+    }
+}
