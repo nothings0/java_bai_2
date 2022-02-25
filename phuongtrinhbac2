@@ -1,0 +1,63 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        double a, b, c;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap a: ");
+        while (true) {
+            try {
+                a = Double.parseDouble(sc.nextLine());
+                break;
+            } catch (Exception ex) {
+                System.out.println("Vui long nhap so thuc !");
+                System.out.print("nhap a: ");
+            }
+        }
+        System.out.println("nhap b: ");
+        while (true) {
+            try {
+                b = Double.parseDouble(sc.nextLine());
+                break;
+            } catch (Exception ex) {
+                System.out.println("Vui long nhap so thuc !");
+                System.out.print("nhap b: ");
+            }
+        }
+        System.out.println("nhap c: ");
+        while (true) {
+            try {
+                c = Double.parseDouble(sc.nextLine());
+                break;
+            } catch (Exception ex) {
+                System.out.println("Vui long nhap so thuc !");
+                System.out.print("nhap c: ");
+            }
+        }
+        if (a == 0) {
+            if (b == 0) {
+                System.out.println("Phương trình vô nghiệm!");
+            } else {
+                double x = -c/b;
+                System.out.println("Phương trình có một nghiệm: " + x);
+            }
+            return;
+        }
+        double delta = b*b - 4*a*c;
+        double x1, x2;
+        if (delta > 0) {
+            x1 = (-b + Math.sqrt(delta)) / (2*a);
+            x2 = (-b - Math.sqrt(delta)) / (2*a);
+            System.out.println("Phương trình có 2 nghiệm là: "
+                    + "x1 = " + x1 + " và x2 = " + x2);
+        } else if (delta == 0) {
+            x1 = (-b / (2 * a));
+            System.out.println("Phương trình có nghiệm kép: " + x1);
+        } else {
+            System.out.println("Phương trình vô nghiệm!");
+        }
+    }
+}
