@@ -1,0 +1,29 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+public class Problem1 {
+    public static void main(String[] args) {
+        double bmi;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("nhap BMI: ");
+        while (true) {
+            try {
+                bmi = Double.parseDouble(sc.nextLine());
+                break;
+            } catch (Exception ex) {
+                System.out.println("Vui long nhap so thuc !");
+                System.out.print("nhap bmi: ");
+            }
+        }
+        if(bmi < 18.5){
+            System.out.println("underweight");
+        }else if(bmi >= 18.5 && bmi < 25){
+            System.out.println("nomal");
+        }else if(bmi >= 25 && bmi < 30){
+            System.out.println("overweight");
+        }else{
+            System.out.println("obese");
+        }
+    }
+}
