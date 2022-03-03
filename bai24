@@ -1,0 +1,30 @@
+package javaapplication5;
+
+import java.util.Scanner;
+
+public class Bai8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a, b, s;
+        System.out.print("nhap a: ");
+        a = Double.parseDouble(sc.nextLine());
+        System.out.print("nhap b: ");
+        b = Double.parseDouble(sc.nextLine());
+        while(a<b){
+            System.out.println("nhap a < b");
+            System.out.print("nhap a: ");
+            a = Double.parseDouble(sc.nextLine());
+            System.out.print("nhap b: ");
+            b = Double.parseDouble(sc.nextLine());
+        }
+        double kq = a - b;
+        System.out.print("What is" + a + " - " + b + " = ");
+        s = Double.parseDouble(sc.nextLine());
+        while(s != kq){
+            System.out.println("nhap sai, hay nhap lai");
+            System.out.print("What is" + a + " - " + b + " = ");
+            s = Double.parseDouble(sc.nextLine());
+        }
+        System.out.println("chinh xac");
+    }
+}
