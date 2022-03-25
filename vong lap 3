@@ -1,1 +1,95 @@
+package vonglap3;
+import java.util.Scanner;
 
+public class Bai1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, s = 0;
+        n = Integer.parseInt(sc.nextLine());
+        for(int i = 2; i <= 2*n; i+=2){
+            s += i;
+        }
+        System.out.println ("Sum = " + s);
+    }
+}
+
+
+
+package vonglap3;
+import java.util.Scanner;
+
+public class Bai2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, s = 0;
+        System.out.print("nhap N: ");
+        n = Integer.parseInt(sc.nextLine());
+        while(n % 2 == 0){
+            System.out.print("nhap N: ");
+            n = Integer.parseInt(sc.nextLine());
+        }
+        for(int i = 1; i <= n; i+=2){
+            s += i;
+        }
+        System.out.println ("Sum = " + s);
+    }
+}
+
+
+package vonglap3;
+
+import java.util.Scanner;
+
+public class Bai3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        double s = 0;
+        System.out.print("nhap N: ");
+        n = Integer.parseInt(sc.nextLine());
+        while(n == 0){
+            System.out.print("nhap N: ");
+            n = Integer.parseInt(sc.nextLine());
+        }
+        for(int i = 1; i <= n; i++){
+            s += 1.0/i;
+        }
+        System.out.println ("Sum = " + s);
+    }
+}
+
+package vonglap3;
+import java.util.Scanner;
+
+public class Bai4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, p = 1;
+        n = Integer.parseInt(sc.nextLine());
+        for(int i = 2; i <= 2*n; i+=2){
+            p *= i;
+        }
+        System.out.println ("Result = " + p);
+    }
+}
+
+
+package vonglap3;
+import java.util.Scanner;
+
+public class Bai5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, s = 1;
+        System.out.print("Nhap n: ");
+        n = Integer.parseInt(sc.nextLine());
+        while(n % 2 == 0){
+            System.out.print("Nhap n: ");
+            n = Integer.parseInt(sc.nextLine());
+        }
+        for(int i = 1; i <= n; i+=2){
+            s *= i;
+        }
+        System.out.println ("Result = " + s);
+    }
+}
